@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>
+			The One Minute Web App
+		</title>
+		<!-- This is our bootstrap theme -->
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.1.0/united/bootstrap.min.css">
+		<!-- This is our custom stylesheet with anything we need to edit. -->
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	</head>
+	<body>
+		<%= erb :header  %>
+		<div class="wrapper">
+			<div class="container">
+				<%= yield %>
+			</div>
+			<div class="push"></div>
+		</div>
+		<div class="footer-wrapper">
+			<%= erb :footer %>
+		</div>
+		<!-- This is jquery a lovely javascript library needed for bootstrap and hosted by Google -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- This is bootstrap javascript to make dropdowns work and other cool javascript interactivity -->
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

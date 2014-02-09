@@ -1,0 +1,44 @@
+/* Style sheet for 1 minute web app by Andy Brown */
+
+/* The body needs 50px padding because of the fixed navbar. This is a bootstrap thing. */
+body {
+  padding-top: 50px;
+}
+
+/*-----------------------------------------------------------------*/
+
+/* A sticky footer, or ensuring your footer appears at the bottom of a page whether you have 1 line of text or 50 pages, is annoyingly difficult
+The following css deals with it. */
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px; /* same as the footer */
+}
+
+.wrapper .container {
+        margin-bottom: 50px; /* deals with mobiles */
+}
+ 
+.push {
+    height: 50px; /* same as the footer */
+}
+.footer-wrapper {
+    position: relative;
+    height: 50px;
+}
+
+/*-----------------------------------------------------------------*/
+
+/* The styling for your footer */
+
+footer {
+    width: 100%;
+    /*Do not change the height as it's part of the sticky footer*/
+    height: 80px;
+    background-color: whitesmoke;
+    border-top: 1px solid lightgrey;
+    padding-top: 10px;
+    margin-top: 20px;
+}
