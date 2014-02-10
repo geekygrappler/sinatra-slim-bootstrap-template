@@ -1,11 +1,56 @@
-/* Style sheet for 1 minute web app by Andy Brown */
+/* Style sheet for 1 minute bootstrap by Andy Brown */
 
 /* The body needs 50px padding because of the fixed navbar. This is a bootstrap thing. */
 body {
   padding-top: 50px;
 }
 
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    /* Allow scrollspy to work without fixed navbar getting in the way of top line*/
+    padding-top: 50px;
+    margin-top: -50px;
+    margin-bottom: -100px;
+}
+
+/* Last section can't have negative bottom margin */
+
+.last-section {
+    margin-bottom: 0px;
+}
+
 /*-----------------------------------------------------------------*/
+
+.jumbotron {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+    background-position: center;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    padding: 30px;
+}
+
+.smoke {
+    background-color: whitesmoke;
+}
 
 /* A sticky footer, or ensuring your footer appears at the bottom of a page whether you have 1 line of text or 50 pages, is annoyingly difficult
 The following css deals with it. */
