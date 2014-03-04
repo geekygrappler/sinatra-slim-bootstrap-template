@@ -1,0 +1,29 @@
+.navbar.navbar-default.navbar-fixed-top
+	.container
+		.navbar-header
+			a.navbar-brand href="/" Slim Template
+			button.navbar-toggle data-target="#navbar-main" data-toggle="collapse" type="button"
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+		#navbar-main.navbar-collapse.collapse
+			ul.nav.navbar-nav
+				li
+					a href="#about" Home
+				li
+					a href="http://www.twitter.com/ubc_founder" target="_blank" About
+				li.dropdown
+					a#themes.dropdown-toggle data-toggle="dropdown" href="#"
+						| Dropdown
+						span.caret
+					ul.dropdown-menu aria-labelledby="themes"
+						li
+							a href=""
+						li.divider
+						li
+							a href=""
+			ul.nav.navbar-nav.navbar-right
+				li
+					a Right Menu
+				li
+					a href="http://www.onehourbootstrap.com " target="_blank"
